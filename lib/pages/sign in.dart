@@ -24,8 +24,8 @@ class Signin extends StatelessWidget {
                 ),
               ],
             ),
-            margin: EdgeInsets.fromLTRB(40, 100, 40, 0),
-            height: screenHeight * .40,
+            margin: EdgeInsets.fromLTRB(40, 30, 40, 0),
+            height: screenHeight * .55,
             width: screenWidth * .80,
             child: Column(
               children: [
@@ -72,10 +72,82 @@ class Signin extends StatelessWidget {
                     decoration: InputDecoration(
                         labelText: " Password", border: InputBorder.none),
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 24,
+                    ),
+                    Text(
+                      "forgot password?",
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: const Color(0xFF016381),
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Container(
+                  width: screenWidth * .50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15),
+                    color: const Color(0xFF016381),
+                  ),
+                  child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.transparent,
+                        shadowColor: Colors.transparent,
+                      ),
+                      child: Text(
+                        "Sign In",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 17,
+                        ),
+                      )),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text("OR"),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  width: screenWidth * .48,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: const Color(0xFF016381),
+                      width: 1,
+                    ),
+                    borderRadius: BorderRadius.circular(15),
+                    // color: Colors.amberAccent,
+                  ),
+                  child: ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.transparent,
+                        shadowColor: Colors.transparent,
+                      ),
+                      child: Text(
+                        "continue as guest",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, color: Colors.grey),
+                      )),
+                ),
               ],
             ),
           ),
+          // Text("data")
         ],
       ),
     );
