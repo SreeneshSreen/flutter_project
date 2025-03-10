@@ -58,6 +58,10 @@ flutter:
   uses-material-design: true
   assets:
   - Assets/Images/img2.png
+  - Assets/Images/find.png
+  - Assets/Images/profileimg.png
+  - Assets/Images/imgoffer.webp
+  - Assets/Images/imgoffer2.webp
 
   # To add assets to your application, add an assets section, like this:
   # assets:

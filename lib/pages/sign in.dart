@@ -69,6 +69,7 @@ class Signin extends StatelessWidget {
                           color: const Color(0xFF8F8F8F), width: 2.0)),
                   margin: EdgeInsets.fromLTRB(20, 0, 20, 0),
                   child: TextField(
+                    obscureText: true,
                     decoration: InputDecoration(
                         labelText: " Password", border: InputBorder.none),
                   ),
@@ -101,7 +102,9 @@ class Signin extends StatelessWidget {
                     color: const Color(0xFF016381),
                   ),
                   child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/category');
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         shadowColor: Colors.transparent,
@@ -133,7 +136,9 @@ class Signin extends StatelessWidget {
                     // color: Colors.amberAccent,
                   ),
                   child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/home');
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.transparent,
                         shadowColor: Colors.transparent,
