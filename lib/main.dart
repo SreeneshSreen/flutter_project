@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:test_app/pages/Home page.dart';
 import 'package:test_app/pages/Category.dart';
 import 'package:test_app/pages/sigin_in.dart';
+import 'package:test_app/pages/joinform.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +19,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: '/home',
       routes: {
-        '/signin':(context) => const SiginIn(),
+        '/signin': (context) => const SiginIn(),
         '/home': (context) => const Homepage(),
         '/category': (context) => const Category(),
+        '/joinform': (context) => const Joinform(),
       },
     );
   }
