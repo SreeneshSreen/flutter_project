@@ -2,7 +2,6 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-
 class Joinform extends StatefulWidget {
   const Joinform({super.key});
 
@@ -11,11 +10,9 @@ class Joinform extends StatefulWidget {
 }
 
 class _JoinformState extends State<Joinform> {
-
   String _errorMessage = "";
   @override
   Widget build(BuildContext context) {
-
     double screenHeight = MediaQuery.of(context).size.height;
     double screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -155,7 +152,7 @@ class _JoinformState extends State<Joinform> {
                     keyboardType: TextInputType.number,
                     inputFormatters: [
                       FilteringTextInputFormatter.digitsOnly,
-                      LengthLimitingTextInputFormatter(8),
+                      LengthLimitingTextInputFormatter(7),
                     ],
                     decoration: InputDecoration(
                       labelText: "  Pin",
