@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
+      initialRoute: '/signin',
       routes: {
         '/signin': (context) => const SiginIn(),
         '/home': (context) => const Homepage(),
