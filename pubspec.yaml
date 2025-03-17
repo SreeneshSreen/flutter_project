@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +64,16 @@ flutter:
   - Assets/Images/imgoffer.webp
   - Assets/Images/imgoffer2.webp
   - Assets/Images/img3.jpg
+  - Assets/Images/kartlogo.jpg
+  - Assets/Images/appl.png
+  - Assets/Images/elec.png
+  - Assets/Images/mobile.png
+  - Assets/Images/fa.png
+  - Assets/Images/apl.png
+  - Assets/Images/imgoffer3.webp
+  - Assets/Images/printer.png
+  - Assets/Images/monitor.png
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

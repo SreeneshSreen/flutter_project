@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/home2.dart';
 import 'package:test_app/main.dart';
+import 'package:test_app/pages/home_products.dart';
+import 'package:test_app/pages/home1.dart';
 
 void main() {
   runApp(MyApp());
@@ -55,12 +58,29 @@ class Homepage extends StatelessWidget {
                         height: 30,
                         fit: BoxFit.cover,
                       ),
-                    )
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/signin');
+                      },
+                      child: Image.asset(
+                        'Assets/Images/kartlogo.jpg',
+                        width: 30,
+                        height: 30,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ],
                 )
               ],
             ),
-          )
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          HomeProducts(),
+          Home1(),
+          Home2(),
         ],
       ),
     );
