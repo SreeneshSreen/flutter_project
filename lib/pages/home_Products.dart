@@ -15,12 +15,18 @@ class HomeProducts extends StatelessWidget {
               // SizedBox(
               //   width: 20,
               // ),
-              Image.asset(
-                'Assets/Images/mobile.png',
-                width: 60,
-                height: 60,
-                fit: BoxFit.cover,
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context,'/Mobiles');
+                },
+                child: Image.asset(
+                  'Assets/Images/mobile.png',
+                  width: 60,
+                  height: 60,
+                  fit: BoxFit.cover,
+                ),
               ),
+
               SizedBox(
                 width: 23,
               ),
